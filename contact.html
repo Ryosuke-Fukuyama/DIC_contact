@@ -34,39 +34,38 @@
       </nav>
     </asaide>
     <article class="content">
-      <table class="contact">
-        <tr>
-          <th>お名前</th>
-          <td><input type="text" id="name" name="name" required
+      <form action="mail.php" method="post" enctype="application/x-www-form-urlencoded">
+        <table class="contact">
+          <tr>
+            <th>お名前</th>
+            <td><input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="58"></td>
-       </tr>
-       <tr>
-          <th>メールアドレス</th>
-          <td><input type="email" id="email"
+        </tr>
+        <tr>
+            <th>メールアドレス</th>
+            <td><input type="email" id="email"
        pattern=".+@globex.com" size="58" required></td>
-       </tr>
-       <tr>
-          <th>性別</th>
-          <td>
-          <input type="checkbox" id="man" name="man">
-          <label for="woman">男</label>
-          <input type="checkbox" id="woman" name="woman">
-          <label for="woman">女</label>
-         </td>
-       </tr>
-       <tr>
-         <th>お問い合わせ内容</th>
-         <td><input type="text" id="ques" name="ques" required
+        </tr>
+        <tr>
+            <th>性別</th>
+            <td>
+              <input type="checkbox" id="man" name="man">
+              <label for="woman">男</label>
+              <input type="checkbox" id="woman" name="woman">
+              <label for="woman">女</label>
+            </td>
+          </tr>
+          <tr>
+            <th>お問い合わせ内容</th>
+            <td><input type="text" id="ques" name="ques" required
       minlength="4" maxlength="8" size="28" class="ques"></td>
-       </tr>
-       <tr>
-         <th> </th>
-         <td>
-          <!-- <formaction="abc@example.com"> -->
-          <input type="submit" value="送信" class="submit">
-         </td>
-       </tr>
-      </table>
+          </tr>
+          <tr>
+            <th> </th>
+            <td><input type="submit" value="送信" class="submit"></td>
+          </tr>
+        </table>
+      </form>
     </article>
     </div>
     <footer class="footer">
