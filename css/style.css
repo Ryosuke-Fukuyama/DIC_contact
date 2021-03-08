@@ -130,3 +130,9 @@ ul.top_menu {
   vertical-align: middle;
   display: table-cell;
 }
+.side_menu .point{
+  background-color: #FCECEC;
+}
+.side_menu .point a{
+  color: #4D4D4D;
+}
